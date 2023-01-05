@@ -1,0 +1,16 @@
+version: "3"
+services:
+  comit-admin:
+    image: comit_admin/comit-admin
+    ports:
+      - "3005:3005"
+    environment:
+      PORT: 3005
+      REACT_APP_SERVER_URL: http://192.168.6.114:8070
+      REACT_APP_WEB_SOCKET_STREAM_URL: ws://10.10.2.201:8443
+      REACT_APP_WEB_SOCKET_IN_OUT_URL: ws://localhost:4005
+      REACT_APP_MAX_NUMBER_CAM_SHOW: 6
+      REACT_APP_QR_CODE_IMAGE_URL: https://drive.google.com/uc?export=view&id=1VMcOxFtm0aePzWOGz-cwOugR0tu8heG4
+      REACT_APP_NUMBER_CAMERA_SHOW_DEFAULT: 4
+      DISABLE_ESLINT_PLUGIN: "true"
+

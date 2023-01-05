@@ -1,0 +1,9 @@
+version: "2"
+services:
+  comit-admin:
+    image: comit_admin/comit-admin
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3005:3005"

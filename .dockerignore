@@ -1,0 +1,15 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+.DS_Store
+
+# production
+/build
+
+# misc
+.env.local
+yarn-error.log*
+package-lock.json
+yarn.lock
+.idea/
+.git
